@@ -12,7 +12,9 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_11_07_183708) do
   create_table "authors", force: :cascade do |t|
-    t.string "name"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "homepage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
